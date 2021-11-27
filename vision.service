@@ -1,0 +1,12 @@
+[Unit]
+Description=Vision Control
+[Service]
+User=pi
+Environment="DISPLAY=:0"
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=python3 /home/pi/videoProcessing.py
+WorkingDirectory=/home/pi
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
