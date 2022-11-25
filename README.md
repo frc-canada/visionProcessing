@@ -5,7 +5,7 @@
 #The vision.service file is designed to be installed as a startup script for the visionProcessing.py file so that when the Raspberry Pi starts up, the vision program is executed.
 
 Place the vision.service script in the following folder:
-/etc/systemd/system as vision.service
+sudo mv vision.service /etc/systemd/system/vision.service
 
 Start the service:
 sudo systemctl start vision
